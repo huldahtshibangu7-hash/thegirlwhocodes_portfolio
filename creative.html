@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <script>
+            // Get two numbers from user
+            let num1 = parseFloat(prompt("Enter first number"));
+            let num2 = parseFloat(prompt("Enter second number"));
+
+            // Perform calculations
+            let sum = num1 + num2;
+            let difference = num1 - num2;
+            let product = num1 * num2;
+            let quotient = num1 / num2;
+
+            //Display results
+            document.write("<h2>Results:</h2>");
+            document.write("Sum: " + sum + "<br>");
+            document.write("Difference: " + difference + "<br>");
+            document.write("Product: " + product + "<br>");
+            document.write("Quotient: " + quotient + "<br>");
+        </script>
+    </body>
+</html>

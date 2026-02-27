@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Info Display</title>
+    </head>
+    <body>
+        <h2>My Personal Info</h2>
+        <script>
+            // Collect user information
+            const name = prompt("What's your name?");
+            const age = prompt("How old are you?");
+            const city = prompt("What city do you live in?");
+            const hobby = prompt("What's your favorite hobby?");
+
+            // Create person object
+            const person = {
+                name: name,
+                age: age,
+                city: city,
+                hobby: hobby
+            };
+
+            // Display information
+            console.log("=== Personal Information ===");
+            console.log('Name: ${person.name}');
+            console.log('Age: ${person.age}');
+            console.log('City: ${person.city}');
+            console.log('Hobby: ${person.hobby}');
+
+            // Display on webpage
+            document.write('<h2>Welcome, ${person.name}!</h2>');
+            document.write('<p>You are ${person.age} years old.</p>');
+            document.write('<p>You live in ${person.city}.</p>');
+            document.write('<p>You enjoy ${person.hobby}!</p>');
+        </script>
+    </body>
+</html>

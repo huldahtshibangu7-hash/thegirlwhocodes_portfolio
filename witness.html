@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1 id="title">Original Title</h1>
+        <p id="text">Original text</p>
+        <button onclick="changeContent()">Change Content</button>
+
+        <script>
+            function changeContent() {
+                // Change text content
+                document.getElementById("title").textContent = "New Title";
+
+                // Change HTML content
+                document.getElementById("text").innerHTML = "<strong>Bold text!</strong>";
+            }
+        </script>
+    </body>
+</html>

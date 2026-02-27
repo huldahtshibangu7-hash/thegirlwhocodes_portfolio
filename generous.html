@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="box" style="width: 100px; height: 100px; background-color: red;"></div>
+        <button onclick="changeStyle()">Change Style</button>
+
+        <script>
+            function changeStyle() {
+                let box = document.getElementById("box");
+                box.style.backgroundColor = "blue";
+                box.style.width = "200px";
+                box.style.height = "200px";
+                box.style.borderRadius = "50%";
+            }
+        </script>
+    </body>
+</html>

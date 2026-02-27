@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Practice</title>
+    </head>
+    <body>
+        <h1 id="main-title">Welcome</h1>
+        <p class="description">This is a paragraph</p>
+        <p class="description">Another paragraph</p>
+        <button id="myButton">Click Me</button>
+
+        <script>
+            // Select by ID
+            let title = document.getElementById("main-title");
+            console.log(title);
+
+            // Select by class (returns array-like collection)
+            let paragraphs = document.getElementsByClassName("description");
+            console.log(paragraphs[0]); // First paragraph
+
+            // Select by tag name
+            let allParegraphs = document.getElementsByTagName("p");
+
+            // Modern selectors (recommended);
+            let button = document.querySelector("#myButton");
+            let firstPara = document.querySelector(".description");
+            let allParas = document.querySelectorAll(".description");
+        </script>
+    </body>
+</html>
